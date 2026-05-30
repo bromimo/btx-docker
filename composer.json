@@ -1,0 +1,14 @@
+{
+    "name": "bromimo/btx-docker",
+    "description": "Docker-окружение для разработки на 1С-Битрикс (Nginx + PHP + MySQL + PhpMyAdmin + Maildev)",
+    "type": "project",
+    "license": "MIT",
+    "require": {
+        "php": ">=8.1"
+    },
+    "scripts": {
+        "post-create-project-cmd": [
+            "@php -r \"copy('.env.example', '.env');\""
+        ]
+    }
+}
