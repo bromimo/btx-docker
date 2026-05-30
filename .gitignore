@@ -1,0 +1,47 @@
+# IDE
+/.idea/
+/.vscode/
+
+# Bitrix core (обновляется самим Битриксом)
+/bitrix/
+
+# Bitrix uploads (контент админки)
+/upload/*
+!/upload/static/
+/upload/static/*
+!/upload/static/btk/
+
+# Окружение и секреты
+/.env
+/local/php_interface/dbconn.local.php
+
+# Архив дистрибутива
+/small_business_encode.tar.gz
+
+# Docker volumes
+/.docker/mysql/data/
+/.mysql/
+
+# Docs (ТЗ и артефакты)
+/docs/*.docx
+/docs/*.txt
+
+# Frontend build
+/frontend/node_modules/
+/frontend/dist/
+
+# Composer
+/vendor/
+/composer.lock
+
+# Логи
+*.log
+
+# Development tooling
+/.claude/
+/.osp/
+/.playwright-mcp/
+/docs/superpowers/
+.worktrees/
+/.superpowers
+adminer*.php
